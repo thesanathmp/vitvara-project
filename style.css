@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+}
+
+.container {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   padding-bottom: 60px;
+   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container .content{
+   text-align: center;
+}
+
+.container .content h3{
+   font-size: 30px;
+   color:#333;
+}
+
+.container .content h3 span{
+   background: crimson;
+   color:#fff;
+   border-radius: 5px;
+   padding:0 15px;
+}
+
+.container .content h1{
+   font-size: 50px;
+   color:#333;
+}
+
+.container .content h1 span{
+   color:crimson;
+}
+
+.container .content p{
+   font-size: 25px;
+   margin-bottom: 20px;
+}
+
+.container .content .btn{
+   display: inline-block;
+   padding:10px 30px;
+   font-size: 20px;
+   background: #333;
+   color:#fff;
+   margin:0 5px;
+   text-transform: capitalize;
+}
+
+.container .content .btn:hover{
+   background: crimson;
+}
+
+.form-container {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   padding-bottom: 60px;
+   background-image: url('images/2314950.jpg');
+   background-size: cover;
+   background-position: center;
+   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.form-container form {
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+   background: rgba(50, 64, 143, 0.4); /* Transparent blue background */
+   text-align: center;
+   width: 500px;
+}
+
+.form-container form h3{
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   color:#fff;
+}
+
+.form-container form input,
+.form-container form select{
+   width: 100%;
+   padding:10px 15px;
+   font-size: 17px;
+   margin:8px 0;
+   background: rgba(0, 0, 0, 0.3);
+   border-radius: 5px;
+   color: white;
+}
+
+.form-container form select option{
+   background: #bb0c0c;
+}
+
+.form-container form .form-btn{
+   --glow-color: rgb(217, 176, 255);
+   --glow-spread-color: rgba(191, 123, 255, 0.781);
+   --enhanced-glow-color: rgb(231, 206, 255);
+   --btn-color: rgb(100, 61, 136);
+   border: .25em solid var(--glow-color);
+   padding: 1em 3em;
+   color: var(--glow-color);
+   font-size: 15px;
+   font-weight: bold;
+   background-color: var(--btn-color);
+   border-radius: 1em;
+   outline: none;
+   box-shadow: 0 0 1em .25em var(--glow-color),
+          0 0 4em 1em var(--glow-spread-color),
+          inset 0 0 .75em .25em var(--glow-color);
+   text-shadow: 0 0 .5em var(--glow-color);
+   position: relative;
+   transition: all 0.3s;
+}   
+
+.form-container form .form-btn:hover{
+   color: var(--btn-color);
+   background-color: var(--glow-color);
+   box-shadow: 0 0 1em .25em var(--glow-color),
+          0 0 4em 2em var(--glow-spread-color),
+          inset 0 0 .75em .25em var(--glow-color);
+}
+
+.form-container form p{
+   margin-top: 10px;
+   font-size: 20px;
+   color:#fff;
+}
+
+.form-container form p a{
+   color: #18ffec;
+}
+
+.form-container form .error-msg{
+   margin:10px 0;
+   display: block;
+   background: crimson;
+   color:#fff;
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}

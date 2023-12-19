@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; /* Remove margin from the body */
+      padding: 0; /* Remove padding from the body */
+      background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+    }
+    
+
+    header {
+      background-color:rgb(52, 110, 169);
+      color: white;
+      text-align: center;
+      padding: 17px 0; /* Add some vertical padding to the header */
+    }
+
+    header h1 {
+      margin: 0; /* Remove margin from the h1 element */
+      font-style: italic;
+    }
+
+    .form-container {
+      max-width: 700px;
+      margin: auto;
+      height: 700px;
+      
+    }
+
+    /* Box structure for a particular form section */
+      .form-section-box {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 15px;
+      background:lightblue;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      font-weight: normal;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: larger;
+    }
+    
+    input[type="text"],
+    textarea {
+      width: 50%;
+      padding: 6px;
+      border: none;
+      border-radius: 4px;
+      border-bottom: 1px solid #c85eac; /* Add a bottom border */
+      outline: none;
+      box-sizing: border-box;
+      display: flex; /* Use flexbox to align contents */
+      align-items: center; /* Vertically center the contents */
+    }
+
+    input {
+      padding: auto;
+    }
+    ::placeholder {
+      color: #946464; /* Light gray color for the placeholder text */
+      opacity: 0.5; /* Reduced opacity to make it appear lighter */
+    }
+
+    .radio-group label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    .radio-group input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .time-group {
+      display: flex;
+      gap: 5px;
+    }
+
+    .form-group select[name="status"] {
+        width: 200px; /* Adjust the width as needed */
+        height: 40px; /* Adjust the height as needed */
+    }
+
+    .form-group select[name="priority"] {
+        width: 200px; /* Adjust the width as needed */
+        height: 40px; /* Adjust the height as needed */
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Admin Form</h1>
+  </header>  
+  <div class="form-container">
+    <form action="admin.php" method="post">
+      <div class="form-section-box">
+      <div class="form-group">
+        <label for="tasknumber">Tasknumber</label>
+        <input type="" id="" name="tasknumber" required placeholder="Your id">
+      </div>
+      </div>
+      <div class="form-section-box">
+      <div class="form-group">
+        <label for="employee">Employee</label>
+        <input type="employee" name="employee" id="employee" />
+      </div>
+      </div>
+      <div class="form-section-box">
+      <div class="form-group">
+        <label for="tasks">Tasks</label>
+        <textarea id="tasks" name="tasks"required placeholder="tasks" ></textarea>
+      </div>
+      </div>
+      <div class="form-section-box">
+      <div class="form-group">
+        <label for="status">Status
+            <select name="status" required>
+                <option value="open">Open</option>
+                <option value="closed">Closed</option>
+              </select>
+        </label>
+      </div>
+      </div>
+      <div class="form-section-box">
+        <div class="form-group">
+          <label for="priority">Priority
+              <select name="priority" required>
+                  <option value="low">Low</option>
+                  <option value="medium">Medium</option>
+                  <option value="high">High</option>
+                </select>
+          </label>
+        </div>
+        </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

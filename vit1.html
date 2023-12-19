@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATL Classes DK</title>
+  <script src="1.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; /* Remove margin from the body */
+      padding: 0; /* Remove padding from the body */
+      background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+    }
+    
+
+    header {
+      background-color:rgb(52, 110, 169);
+      color: white;
+      text-align: center;
+      padding: 17px 0; /* Add some vertical padding to the header */
+    }
+
+    header h1 {
+      margin: 0; /* Remove margin from the h1 element */
+      font-style: italic;
+    }
+
+    .form-container {
+      max-width: 700px;
+      margin: auto;
+      
+    }
+
+    /* Box structure for a particular form section */
+      .form-section-box {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 15px;
+      background:lightblue;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      font-weight: normal;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: larger;
+    }
+    
+    input[type="text"],
+    textarea {
+      width: 50%;
+      padding: 6px;
+      border: none;
+      border-radius: 4px;
+      border-bottom: 1px solid #c85eac; /* Add a bottom border */
+      outline: none;
+      box-sizing: border-box;
+      display: flex; /* Use flexbox to align contents */
+      align-items: center; /* Vertically center the contents */
+    }
+
+    input[type="email"] {
+      border: none; /* Remove default border */
+      border-bottom: 1px solid #c85eac; /* Add a bottom border */
+      outline: none; /* Remove focus outline */
+      padding: 5px 0; /* Add some padding above and below the text */
+      width: 50%; /* Set the input field to take half of the width */
+      box-sizing: border-box; /* Include padding and border in width calculation */
+      font-size: 16px; /* Adjust font size as needed */
+    }
+
+    input {
+      padding: auto;
+    }
+    ::placeholder {
+      color: #946464; /* Light gray color for the placeholder text */
+      opacity: 0.5; /* Reduced opacity to make it appear lighter */
+    }
+
+    .radio-group label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    .radio-group input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .time-group {
+      display: flex;
+      gap: 5px;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ATL Classes DK</h1>
+  </header>  
+  <div class="form-container">
+    <form action="connnect1.php" method="post" enctype="multipart/form-data">
+      <div class="form-section-box">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Your email">
+      </div>
+      </div>
+      <div class="form-section-box">
+      <div class="form-group">
+        <label>SCHOOL</label>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="school" value="GOVERNMENT HIGH SCHOOL ELIMALE" required> GOVERNMENT HIGH SCHOOL ELIMALE
+          </label>
+          <label>
+            <input type="radio" name="school" value="GOVERNMENT HIGH SCHOOL KADABA" required> GOVERNMENT HIGH SCHOOL KADABA
+          </label>
+          <label>
+            <input type="radio" name="school" value="KARNATAKA HIGH SCHOOL DAKSHINA KANNADA MANI" required> KARNATAKA HIGH SCHOOL DAKSHINA KANNADA MANI
+          </label>
+          <label>
+            <input type="radio" name="school" value="GHS GURUVAYANKERE" required> GHS GURUVAYANKERE
+          </label>
+          <label>
+            <input type="radio" name="school" value="SDM UJIRE" required> SDM UJIRE
+          </label>
+          <label>
+            <input type="radio" name="school" value="BHAGAWVAN SRI SATHYA SAI HIGHSCHOOL (E. M.) CHOKKADY" required> BHAGAWVAN SRI SATHYA SAI HIGHSCHOOL (E. M.) CHOKKADY
+          </label>
+          <label>
+            <input type="radio" name="school" value="SRI SATHYASAI LOKASEVA HIGH SCHOOL ALIKE" required> SRI SATHYASAI LOKASEVA HIGH SCHOOL ALIKE
+          </label>
+          <label>
+            <input type="radio" name="school" value="Vidyarashmi savanoor" required> Vidyarashmi savanoor
+          </label>
+          <label>
+            <input type="radio" name="school" value="St Aloysius Gonzaga" required> St Aloysius Gonzaga
+          </label>
+          <label>
+            <input type="radio" name="school" value="NITK Surathkal" required> NITK Surathkal
+          </label>
+          <label>
+            <input type="radio" name="school" value="AL BADRIYA ENGLISH MEDIUM HIGH SCHOOL" required> AL BADRIYA ENGLISH MEDIUM HIGH SCHOOL
+          </label>
+          <label>
+            <input type="radio" name="school" value="PRESTEIGE School" required> PRESTEIGE School
+          </label>
+          <label>
+            <input type="radio" name="school" value="AIDED HOLY FAMILY HIGH SCHOOL BAJPE" required> AIDED HOLY FAMILY HIGH SCHOOL BAJPE
+          </label>
+          <label style="display: flex; align-items: center;">
+            <input type="radio" name="school" value=" DR M RAMANNA SHETTY MEMORIAL ENGLISH MEDIUM HIGH SCHOOL" required>
+            <span style="margin-left: 5px;"> DR M RAMANNA SHETTY MEMORIAL ENGLISH MEDIUM HIGH SCHOOL</span>
+          </label>
+          <label style="display: flex; align-items: center;">
+            <input type="radio" name="school" value="EXCELLENT SCIENCE AND COMMERCE P U COLLEGE KALLABETTU MOODBIDRI" required>
+            <span style="margin-left: 5px;">EXCELLENT SCIENCE AND COMMERCE P U COLLEGE KALLABETTU MOODBIDRI</span>
+          </label>
+          <label>
+            <input type="radio" name="school" value="JAWAHAR NAVODAYA VIDYALAYA" required> JAWAHAR NAVODAYA VIDYALAYA
+          </label>
+          <label>
+            <input type="radio" name="school" value="SHARADA VIDYANIKETHANA PUBLIC SCHOOL" required> SHARADA VIDYANIKETHANA PUBLIC SCHOOL
+          </label>
+          <label>
+            <input type="radio" name="school" value="SRI RAMA PU COLLEGE KALLADKA" required> SRI RAMA PU COLLEGE KALLADKA
+          </label>
+          <label style="display: flex; align-items: center;">
+            <input type="radio" name="school" value=" DR N SHANKARA ADYANTHAYA MEMORIAL ENGLISH MEDIUM HIGH SCHOOL NITTE" required>
+            <span style="margin-left: 5px;"> DR N SHANKARA ADYANTHAYA MEMORIAL ENGLISH MEDIUM HIGH SCHOOL NITTE</span>
+          </label>
+        </div>
+      </div>
+      </div>
+      <div class="form-section-box">
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date" value="" />
+      </div>
+      </div>
+      <div class="form-section-box">    
+      <div class="form-group">
+        <label for="time">From Time</label>
+        <div class="time-group">
+          <input type="number" id="hour" name="fromhour" placeholder="HH" min="1" max="12" required>
+          <span>:</span>
+          <input type="number" id="minute" name="fromminute" placeholder="MM" min="0" max="59" required>
+          <select name="ampm" required>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+      </div>
+      </div>
+      <div class="form-section-box">
+      <div class="form-group">
+        <label for="time">To Time</label>
+        <div class="time-group">
+          <input type="number" id="hour" name="tohour" placeholder="HH" min="1" max="12" required>
+          <span>:</span>
+          <input type="number" id="minute" name="tominute" placeholder="MM" min="0" max="59" required>
+          <select name="ampm" required>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+      </div>
+      </div>
+      <div class="form-section-box">
+      <div class="form-group">
+        <label for="students">Students</label>
+        <textarea id="students" name="students"required placeholder="Your answer" ></textarea>
+      </div>
+      </div>
+      <div class="form-section-box">
+      <div class="form-group">
+        <label for="classdetails">CLASS DETAILS</label>
+        <textarea id="classdetails" name="classdetails"required placeholder="Your answer"></textarea>
+      </div>
+      </div>
+      <div class="form-section-box">
+      <div class="form-group">
+        <label for="trainers">TRAINERS</label>
+        <textarea id="trainers" name="trainers"required placeholder="Your answer"></textarea>
+      </div>
+      </div>
+      <div class="form-section-box">
+      <div class="form-group">
+        <label for="expense">EXPENSE</label>
+        <textarea id="expense" name="expense"required placeholder="Your answer"></textarea>
+      </div>
+      </div>
+      <div class="form-section-box">
+      <div class="form-group">
+        <label for="expensedetails">EXPENSE-DETAILS</label>
+        <textarea id="expensedetails" name="expensedetails"required placeholder="Your answer"></textarea>
+      </div>
+      </div>
+      <div class="form-section-box">
+      <div class="form-group">
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments"required placeholder="Your answer"></textarea>
+      </div>
+      </div>
+      <div class="form-section-box">
+      <div class="form-group">
+        <label for="requirements">Requirements/Components</label>
+        <textarea id="requirements" name="requirements" required placeholder="Your answer"></textarea>
+      </div>
+      </div>
+      <div class="form-section-box">
+      <div class="form-group">
+        <label for="user-image">Upload an Image</label>
+        <input type="file"  name="uploadfile" accept="image/*" required>
+      </div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

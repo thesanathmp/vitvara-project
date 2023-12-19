@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATL Vendor</title>
+  <style>
+     body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #5cfb17;
+    }
+    
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .left-half {
+      width: 45%;
+    }
+    
+    .right-half {
+      width: 45%;
+    }
+    
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    
+    label,
+    input {
+      margin-bottom: 8px;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    
+      .left-half,
+      .right-half {
+        width: 100%;
+      }
+    }
+    .payment-button {
+      width: 80%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #28a745; 
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    .payment-button:hover {
+      background-color: #218838; 
+    }
+    
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    
+      .left-half,
+      .right-half {
+        width: 100%;
+      }
+    
+      .payment-button {
+        margin-top: 10px;
+      }
+    }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-half">
+      <h1>ATL Vendor Information</h1>
+      <form action="insert_data.php" method="post">
+        <label for="schoolName">School Name:</label>
+        <input type="text" id="schoolName" name="schoolName" required>
+      
+      
+      <label for="atlCode">ATL Code:</label>
+      <input type="text" id="atlCode" name="atlCode" required>
+      
+      <label for="dashboardPassword">Dashboard Password:</label>
+      <input type="password" id="dashboardPassword" name="dashboardPassword" required>
+
+      <label for="gemCode">GEM Code:</label>
+      <input type="text" id="gemCode" name="gemCode" required>
+
+      <label for="gemPassword">GEM Password:</label>
+      <input type="password" id="gemPassword" name="gemPassword" required>
+
+      <label for="govtEmail">Government Email:</label>
+      <input type="email" id="govtEmail" name="govtEmail" required>
+
+      <label for="govtEmailPassword">Government Email Password:</label>
+      <input type="password" id="govtEmailPassword" name="govtEmailPassword" required>
+
+      <label for="sanctionNumber">Sanction Number:</label>
+      <input type="text" id="sanctionNumber" name="sanctionNumber" required>
+
+      <label for="udise">UDISE:</label>
+      <input type="text" id="udise" name="udise" required>
+
+      <label for="pfms">PFMS:</label>
+      <input type="text" id="pfms" name="pfms" required>
+
+      <label for="pfmsPassword">PFMS Password:</label>
+      <input type="password" id="pfmsPassword" name="pfmsPassword" required>
+      
+    </div>
+    <div class="right-half">
+      <label for="fundDate">Fund Date:</label>
+      <input type="date" id="fundDate" name="fundDate" required>
+
+      <label for="pfmsOp">PFMS OP:</label>
+      <input type="text" id="pfmsOp" name="pfmsOp" required>
+
+      <label for="opPassword">OP Password:</label>
+      <input type="password" id="opPassword" name="opPassword" required>
+
+      <label for="principalName">Principal Name:</label>
+      <input type="text" id="principalName" name="principalName" required>
+
+      <label for="principalPhone">Principal Phone:</label>
+      <input type="tel" id="principalPhone" name="principalPhone" required>
+
+      <label for="atlIncharge">ATL Incharge:</label>
+      <input type="text" id="atlIncharge" name="atlIncharge" required>
+
+      <label for="atlInchargePhone">ATL Incharge Phone:</label>
+      <input type="tel" id="atlInchargePhone" name="atlInchargePhone" required>
+
+      <label for="regEmail">Registration Email:</label>
+      <input type="email" id="regEmail" name="regEmail" required>
+
+      <label for="regPhone">Registration Phone:</label>
+      <input type="tel" id="regPhone" name="regPhone" required>
+
+      <label for="bharatkosh">Bharatkosh:</label>
+      <input type="text" id="bharatkosh" name="bharatkosh" required>
+
+      <label for="bkoshpswd">Bharatkosh Password:</label>
+      <input type="password" id="bkoshpswd" name="bkoshpswd" required>
+
+      <div>
+        <input type="submit" value="Submit" class="payment-button">
+      </div>
+      <div class="right-half">
+        
+      </div>
+
+  </div>
+  
+</body>
+</html>
